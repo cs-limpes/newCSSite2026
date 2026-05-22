@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Charlene Slimp</title>
+    <meta name="description" content="Contact Charlene Slimp for professional and academic inquiries.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="index.html">Charlene Slimp</a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research &amp; Writing</a></li>
+            <li><a href="selected-work.html">Selected Work</a></li>
+            <li><a href="current-focus.html">Current Focus</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main page">
+      <header class="page-header">
+        <p class="kicker">Contact</p>
+        <h1>Professional and academic inquiries are welcome.</h1>
+      </header>
+
+      <div class="contact-layout">
+        <div class="content-flow">
+          <p>Use this form for academic admissions conversations, research and writing inquiries, selected work requests, consulting context, or thoughtful professional introductions.</p>
+          <p>The form layout is ready for a future static form provider, but it is not connected to a backend yet. No plain email address is published on this site.</p>
+        </div>
+
+        <form class="contact-form" data-static-form method="post" action="#" aria-describedby="form-note">
+          <p id="form-note" class="form-note">This form is not yet connected. Submitting will not send a message until a backend or static form provider is added.</p>
+
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+          </div>
+
+          <div class="form-field hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="8" required></textarea>
+          </div>
+
+          <button type="submit">Prepare message</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-current-year>2026</span> Charlene Slimp. Built as a small static website.</p>
+    </footer>
+  </body>
+</html>
