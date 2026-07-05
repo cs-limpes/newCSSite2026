@@ -33,3 +33,17 @@
     });
   });
 })();
+
+
+var emailLinks = document.querySelectorAll("[data-email-link]");
+
+emailLinks.forEach(function (link) {
+  var user = link.getAttribute("data-user");
+  var domain = link.getAttribute("data-domain");
+
+  if (!user || !domain) {
+    return;
+  }
+
+  link.setAttribute("href", "mailto:" + user + "@" + domain);
+});
