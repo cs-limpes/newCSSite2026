@@ -55,42 +55,34 @@
 
           <h2>Email</h2>
 
-          <p><a href="mailto:hello@charleneslimp.com">hello@charleneslimp.com</a></p>
-        </div>
-
-        <form class="contact-form" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-          <input type="hidden" name="form-name" value="contact">
-
-          <p class="form-note">Use this form for consulting inquiries, collaboration, research conversations, or professional materials.</p>
-
-          <p class="hp-field">
-            <label>Do not fill this out if you are human: <input name="bot-field"></label>
+          <p>
+            <a class="contact-button" href="#" data-email-link data-user="hello" data-domain="charleneslimp.com">
+              Email Charlene
+            </a>
           </p>
 
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
+          <p class="form-note">If the button does not open your email app, email hello at charleneslimp dot com.</p>
+        </div>
 
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
+        <aside class="contact-form contact-card" aria-labelledby="contact-card-title">
+        <p class="meta-label">Start here</p>
+        <h2 id="contact-card-title">Send the useful version of the mess.</h2>
 
-          <div class="form-field">
-            <label for="topic">Topic</label>
-            <input id="topic" name="topic" type="text" autocomplete="off" placeholder="Consulting, collaboration, research, accessibility, etc.">
-          </div>
+        <p>For consulting, the most helpful first message usually includes:</p>
 
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="8" required></textarea>
-          </div>
+        <ul>
+          <li>What is broken, confusing, slow, or costing money</li>
+          <li>What platform, website, system, or workflow is involved</li>
+          <li>What you have already tried</li>
+          <li>What outcome you are hoping for</li>
+        </ul>
 
-          <button type="submit">Send message</button>
-
-          <p class="form-status" aria-live="polite"></p>
-        </form>
+        <p>
+          <a class="contact-button" href="#" data-email-link data-user="hello" data-domain="charleneslimp.com">
+            Email me about a project
+          </a>
+        </p>
+      </aside>
       </section>
 
       <section class="note-block" aria-labelledby="contact-note">

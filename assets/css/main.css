@@ -425,23 +425,18 @@ code {
   border-color: var(--bluegreen);
   background: var(--bluegreen);
   color: var(--vanilla);
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  border: 1px solid var(--wine);
-  padding: 0.78rem 1.05rem;
-  background: var(--wine);
-  color: var(--vanilla);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 750;
-  text-decoration: none;
 }
 
-.contact-button:hover {
-  border-color: var(--bluegreen);
-  background: var(--bluegreen);
-  color: var(--vanilla);
+.contact-card {
+  align-self: start;
+}
+
+.contact-card ul {
+  margin-block: var(--space-3);
+}
+
+.contact-card li {
+  margin-block-start: 0.45rem;
 }
 
 .note-card::before,
