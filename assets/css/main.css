@@ -222,7 +222,7 @@ code {
   margin-inline-end: 0;
   border: 0;
   border-radius: 0;
-  background: url("../img/moth-mark.svg") center / contain no-repeat;
+  background: url("../img/moth-mark-light.svg") center / contain no-repeat;
   box-shadow: none;
   vertical-align: middle;
   flex: 0 0 auto;
@@ -286,7 +286,7 @@ code {
   pointer-events: none;
 }
 
-.site-main::after {
+/* .site-main::after {
   content: "✦";
   position: absolute;
   inset-block-start: 1.15rem;
@@ -295,7 +295,7 @@ code {
   color: rgba(121, 20, 36, 0.35);
   font-size: 2rem;
   line-height: 1;
-}
+} */
 
 .site-main > * {
   position: relative;
