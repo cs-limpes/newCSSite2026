@@ -204,25 +204,28 @@ code {
 }
 
 .site-title {
-  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--bluegreen-light);
+}
+
+.site-title:hover {
   color: var(--vanilla);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .site-title::before {
   content: "";
   display: inline-block;
-  inline-size: 0.55rem;
-  block-size: 0.55rem;
-  margin-inline-end: 0.5rem;
-  border: 2px solid var(--bluegreen-light);
-  border-radius: 50%;
-  background: var(--rose);
-  box-shadow: 0 0 0 0.22rem rgba(88, 141, 147, 0.18);
-  vertical-align: 0.05em;
+  inline-size: 2rem;
+  block-size: 2rem;
+  margin-inline-end: 0;
+  border: 0;
+  border-radius: 0;
+  background: url("../img/moth-mark.svg") center / contain no-repeat;
+  box-shadow: none;
+  vertical-align: middle;
+  flex: 0 0 auto;
 }
 
 .site-nav ul {
@@ -318,16 +321,13 @@ code {
 .intro::after {
   content: "";
   position: absolute;
-  inline-size: clamp(7rem, 22vw, 14rem);
-  block-size: clamp(7rem, 22vw, 14rem);
-  inset-block-start: -1.25rem;
-  inset-inline-end: -10rem;
-  border: 1px solid rgba(80, 123, 123, 0.38);
-  border-radius: 999px;
-  background:
-    radial-gradient(circle, transparent 0 32%, rgba(80, 123, 123, 0.16) 33% 34%, transparent 35%),
-    radial-gradient(circle, transparent 0 55%, rgba(121, 20, 36, 0.14) 56% 57%, transparent 58%);
-  opacity: 0.9;
+  inline-size: clamp(9rem, 24vw, 16rem);
+  block-size: clamp(9rem, 24vw, 16rem);
+  inset-block-start: -1.5rem;
+  inset-inline-end: -11rem;
+  background: url("../img/moth-mark.svg") center / contain no-repeat;
+  opacity: 0.14;
+  filter: invert(47%) sepia(13%) saturate(951%) hue-rotate(134deg) brightness(91%) contrast(84%);
 }
 
 .page-header,
