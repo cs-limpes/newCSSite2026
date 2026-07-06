@@ -1,0 +1,43 @@
+<svg width="220" height="520" viewBox="0 0 220 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#791424" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main stem -->
+    <path d="M108 22C106 56 110 88 108 120C106 162 96 208 100 252C104 302 116 346 112 396C110 432 106 466 108 498"></path>
+
+    <!-- Upper rose bud -->
+    <path d="M95 42C98 32 108 27 118 30C126 33 131 41 129 50C127 58 118 63 109 63C100 63 92 58 90 50C88 44 90 38 95 42Z"></path>
+    <path d="M103 34C106 40 107 46 106 54"></path>
+    <path d="M114 34C112 40 111 46 112 54"></path>
+
+    <!-- Small leaves upper left -->
+    <path d="M105 92C86 82 70 84 58 98C72 102 89 105 104 99"></path>
+    <path d="M110 114C128 102 144 103 159 116C145 122 126 124 111 120"></path>
+
+    <!-- Tiny thorns -->
+    <path d="M102 138L92 147"></path>
+    <path d="M112 176L122 184"></path>
+    <path d="M99 228L89 238"></path>
+    <path d="M114 286L124 294"></path>
+
+    <!-- Mid leaves -->
+    <path d="M102 188C82 178 63 181 48 197C67 201 86 204 101 197"></path>
+    <path d="M110 222C132 210 151 214 169 231C149 235 129 237 112 229"></path>
+
+    <!-- Small side sprig -->
+    <path d="M110 266C128 268 142 277 151 293"></path>
+    <path d="M151 293C140 293 131 297 123 306"></path>
+
+    <!-- Lower leaves -->
+    <path d="M103 318C82 306 63 309 48 326C66 329 86 332 102 326"></path>
+    <path d="M111 352C132 340 151 345 168 362C149 365 129 367 111 359"></path>
+
+    <!-- Lower bloom -->
+    <path d="M92 430C95 415 109 406 124 410C138 414 145 426 142 440C139 452 126 460 113 459C100 458 90 450 88 439C87 434 88 430 92 430Z"></path>
+    <path d="M100 422C106 428 110 437 109 447"></path>
+    <path d="M118 420C115 428 114 437 117 448"></path>
+    <path d="M96 438C104 433 113 432 122 436"></path>
+    <path d="M102 448C110 443 119 443 127 448"></path>
+
+    <!-- Little end curl -->
+    <path d="M108 498C112 506 119 511 128 512"></path>
+  </g>
+</svg>

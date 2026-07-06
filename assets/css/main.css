@@ -382,6 +382,18 @@ code {
   pointer-events: none;
 }
 
+.site-main::after {
+  content: "";
+  position: absolute;
+  inset-block-end: 2rem;
+  inset-inline-end: 1.75rem;
+  inline-size: clamp(9rem, 18vw, 16rem);
+  block-size: clamp(14rem, 30vw, 24rem);
+  background: url("../img/botanical-edge.svg") center / contain no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
 /* .site-main::after {
   content: "✦";
   position: absolute;
@@ -1299,5 +1311,58 @@ button {
 @media (max-width: 30rem) {
   .site-nav ul {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Homepage composition refinements */
+
+.site-main > .trajectory {
+  max-width: 32rem;
+  margin-block-start: calc(var(--space-4) * -1);
+  margin-block-end: var(--space-5);
+  margin-inline-start: auto;
+  margin-inline-end: clamp(0rem, 5vw, 3rem);
+  transform: rotate(0.65deg);
+}
+
+.site-main > .trajectory::after {
+  content: "";
+  position: absolute;
+  inset-block-start: -0.65rem;
+  inset-inline-end: 1.25rem;
+  inline-size: 3.2rem;
+  block-size: 1.1rem;
+  background: rgba(254, 238, 223, 0.55);
+  border: 1px solid rgba(121, 20, 36, 0.14);
+  transform: rotate(3deg);
+  box-shadow: 0 0.25rem 0.8rem rgba(38, 15, 24, 0.08);
+}
+
+.site-main > .section-grid {
+  margin-block-start: var(--space-3);
+}
+
+.site-main > .note-block {
+  max-width: 52rem;
+  margin-block-start: var(--space-6);
+  margin-inline-start: clamp(0rem, 8vw, 5rem);
+  margin-inline-end: auto;
+}
+
+@media (max-width: 47.9375rem) {
+  .site-main > .trajectory {
+    max-width: none;
+    margin-block-start: var(--space-5);
+    margin-inline: 0;
+    transform: none;
+  }
+
+  .site-main > .trajectory::after {
+    display: none;
+  }
+
+  .site-main > .note-block {
+    max-width: none;
+    margin-inline: 0;
   }
 }
