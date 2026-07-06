@@ -1112,16 +1112,24 @@ button {
   margin-block-end: var(--space-5);
 }
 
+/* moth on sub pages */
+
 .page-header::after,
 .article-header::after {
   content: "";
   position: absolute;
+  inline-size: clamp(9rem, 24vw, 16rem);
+  block-size: clamp(9rem, 24vw, 16rem);
+  inset-block-start: -1.5rem;
+  inset-inline-end: -11rem;
+  /*
   inline-size: clamp(7rem, 18vw, 12rem);
   block-size: clamp(7rem, 18vw, 12rem);
   inset-block-start: 0;
   inset-inline-end: clamp(-8rem, -10vw, -4rem);
+  */
   background: url("../img/moth-mark.svg") center / contain no-repeat;
-  opacity: 0.075;
+  opacity: 0.15;
   filter: invert(47%) sepia(13%) saturate(951%) hue-rotate(134deg) brightness(91%) contrast(84%);
   pointer-events: none;
 }
