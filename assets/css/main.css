@@ -1316,12 +1316,23 @@ button {
 
 /* Homepage composition refinements */
 
+.site-main {
+  position: relative;
+}
+
+.site-main > .intro {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+  padding-block-end: var(--space-5);
+}
+
 .site-main > .trajectory {
-  max-width: 32rem;
-  margin-block-start: calc(var(--space-4) * -1);
-  margin-block-end: var(--space-5);
-  margin-inline-start: auto;
-  margin-inline-end: clamp(0rem, 5vw, 3rem);
+  position: absolute;
+  inset-block-start: clamp(12rem, 18vw, 15.5rem);
+  inset-inline-end: clamp(2rem, 6vw, 5rem);
+  z-index: 2;
+  max-width: 27rem;
+  margin: 0;
   transform: rotate(0.65deg);
 }
 
@@ -1339,7 +1350,7 @@ button {
 }
 
 .site-main > .section-grid {
-  margin-block-start: var(--space-3);
+  margin-block-start: var(--space-5);
 }
 
 .site-main > .note-block {
@@ -1350,9 +1361,18 @@ button {
 }
 
 @media (max-width: 47.9375rem) {
-  .site-main > .trajectory {
+  .site-main > .intro {
     max-width: none;
-    margin-block-start: var(--space-5);
+    margin-block-end: var(--space-5);
+    padding-block-end: 0;
+  }
+
+  .site-main > .trajectory {
+    position: relative;
+    inset: auto;
+    z-index: 1;
+    max-width: none;
+    margin-block: var(--space-5);
     margin-inline: 0;
     transform: none;
   }
