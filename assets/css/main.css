@@ -118,10 +118,6 @@ ol {
   padding-inline-start: 1.3rem;
 }
 
-li + li {
-  margin-block-start: var(--space-1);
-}
-
 h1,
 h2,
 h3 {
@@ -211,11 +207,15 @@ code {
   color: var(--bluegreen-light);
 }
 
+
 .site-title:hover {
   color: var(--vanilla);
 }
 
-.site-title::before {
+.site-title a {
+  text-decoration-line: none;
+}
+/* .site-title::before {
   content: "";
   display: inline-block;
   inline-size: 2rem;
@@ -227,7 +227,7 @@ code {
   box-shadow: none;
   vertical-align: middle;
   flex: 0 0 auto;
-}
+} */
 
 .site-nav ul {
   display: flex;
