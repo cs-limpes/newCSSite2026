@@ -1388,12 +1388,14 @@ button {
   }
 }
 
+/* About Page */
+
 .about-current-note {
   max-width: 34rem;
   float: right;
   margin-block: var(--space-5);
   margin-inline-start: clamp(0rem, 8vw, 5rem);
-  transform: rotate(-0.35deg);
+  transform: rotate(-0.67deg);
 }
 
 .about-current-note h2 {
@@ -1404,6 +1406,45 @@ button {
 
 @media (max-width: 47.9375rem) {
   .about-current-note {
+    max-width: none;
+    margin-inline: 0;
+    transform: none;
+  }
+}
+
+/* Consulting page */
+
+.consulting-aside {
+  max-width: 30rem;
+  margin-block: var(--space-5);
+  margin-inline-start: auto;
+  margin-inline-end: clamp(0rem, 6vw, 4rem);
+  transform: rotate(0.35deg);
+}
+
+.consulting-aside h2 {
+  margin-block-start: 0;
+  border-block-start: 0;
+  padding-block-start: 0;
+}
+
+.work-list {
+  max-width: 60rem;
+}
+
+@media (min-width: 48rem) {
+  .work-list {
+    columns: 2;
+    column-gap: var(--space-5);
+  }
+
+  .work-list li {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  .consulting-aside {
     max-width: none;
     margin-inline: 0;
     transform: none;
