@@ -47,3 +47,16 @@ emailLinks.forEach(function (link) {
 
   link.setAttribute("href", "mailto:" + user + "@" + domain);
 });
+
+var navToggle = document.querySelector(".nav-toggle");
+var siteNav = document.querySelector(".site-nav");
+
+if (navToggle && siteNav) {
+  navToggle.addEventListener("click", function () {
+    var isOpen = navToggle.getAttribute("aria-expanded") === "true";
+
+    navToggle.setAttribute("aria-expanded", String(!isOpen));
+    navToggle.querySelector(".nav-toggle__text").textContent = isOpen ? "Menu" : "Close";
+    siteNav.classList.toggle("is-open", !isOpen);
+  });
+}
