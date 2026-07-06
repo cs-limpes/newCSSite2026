@@ -229,6 +229,11 @@ code {
   flex: 0 0 auto;
 } */
 
+.site-nav {
+  top: -2rem;
+  position: relative;
+}
+
 .site-nav ul {
   display: flex;
   flex-wrap: wrap;
