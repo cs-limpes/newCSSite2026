@@ -1057,7 +1057,7 @@ button {
   box-shadow: 0.35rem 0.45rem 0 rgba(121, 20, 36, 0.06), var(--shadow-small);
 }
 
-.entry::after,
+/* .entry::after,
 .cv-item::after,
 .note-block::after,
 .contact-card::after {
@@ -1068,7 +1068,7 @@ button {
   color: rgba(121, 20, 36, 0.22);
   font-size: 1rem;
   line-height: 1;
-}
+} */
 
 .contact-layout {
   position: relative;
